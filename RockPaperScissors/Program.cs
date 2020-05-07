@@ -39,10 +39,27 @@ namespace RockPaperScissors {
                     case 2:
                         inputCPU = "PAPER";
                         Console.WriteLine("CPU choose paper");
+                        if(inputPlayer == "rock") {
+                            Console.WriteLine("CPU wins!");
+                            scoreCPU++;
+                        }
+                        else {
+                            Console.WriteLine("YOU win!");
+                            scorePlayer++;
+                        }
                         break;
                     case 3:
                         inputCPU = "SCISSORS";
                         Console.WriteLine("CPU choose scissors");
+                        if(inputPlayer == "paper") {
+                            Console.WriteLine("CPU wins!");
+                            scoreCPU++;
+                        }
+                        else {
+                            Console.WriteLine("YOU win!");
+                            scorePlayer++;
+                        }
+
                         break;
                     default:
                         Console.WriteLine("Invalid entry!");
