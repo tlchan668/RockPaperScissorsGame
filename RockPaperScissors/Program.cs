@@ -30,6 +30,9 @@ namespace RockPaperScissors {
                             Console.WriteLine("CPU wins!");
                             scoreCPU++;
                         }
+                        if (inputPlayer=="rock") {
+                            Console.WriteLine("TIE!");
+                        }
                         else {
                             Console.WriteLine("YOU win!");
                             scorePlayer++;
@@ -43,6 +46,9 @@ namespace RockPaperScissors {
                             Console.WriteLine("CPU wins!");
                             scoreCPU++;
                         }
+                        if(inputPlayer == "paper") {
+                            Console.WriteLine("TIE!");
+                        }
                         else {
                             Console.WriteLine("YOU win!");
                             scorePlayer++;
@@ -54,6 +60,9 @@ namespace RockPaperScissors {
                         if(inputPlayer == "paper") {
                             Console.WriteLine("CPU wins!");
                             scoreCPU++;
+                        }
+                        if(inputPlayer == "scissors") {
+                            Console.WriteLine("TIE!");
                         }
                         else {
                             Console.WriteLine("YOU win!");
